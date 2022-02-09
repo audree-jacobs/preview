@@ -14,7 +14,7 @@ gsap.to("#circle", {duration: 4, ease: "circ.out", width:650, x:325, y:-325, opa
         scrollTrigger: {  
             trigger: ".container2",
             start: 'top top-=200',
-            end: 'end',
+            end: 'bottom',
             scrub: true 
         }
 });
@@ -24,7 +24,7 @@ gsap.to("#object1", {duration: 4, ease: "circ.out", width:250, x:125, y:-125, op
     scrollTrigger: {  
         trigger: ".container2",
         start: 'top top-=200',
-        end: 'end',
+        end: 'bottom',
         scrub: true 
     }
 });
