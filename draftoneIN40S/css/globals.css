@@ -1,0 +1,46 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Zen+Kurenaido:400|Be+Vietnam:400|Bebas+Neue:400");
+@font-face {
+  font-family: "Scala Sans Pro-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ScalaSansPro-Regular.otf") format("opentype");
+}
+
+/* The following line is used to measure usage of this code in production. For more info see our usage billing page */
+@import url("https://px.animaapp.com/62013f8d7a548b80f4ee9b3c.62013f93915d7c53431e75e1.X64GdWi.hcp.png");
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.overlay {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay.animate-appear {
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: block;
+  opacity: 0;
+}
+
+.overlay.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+* {
+  box-sizing: border-box;
+}

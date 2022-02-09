@@ -1,0 +1,76 @@
+:root { 
+  --black: #000000;
+  --cinnabar: #ef4436;
+  --cinnabar-2: #f04837;
+  --jaffa: #f6803c;
+  --mist-gray: #c4c4c4;
+  --thunderbird: #be2013;
+  --totem-pole: #a1160a;
+  --tuatara: #363636;
+  --white: #ffffff;
+  --yellow-orange: #faac40;
+ 
+  --font-size-l: 45px;
+  --font-size-m: 26px;
+  --font-size-s: 24px;
+  --font-size-xl: 48px;
+  --font-size-xxl: 52px;
+  --font-size-xxxl: 53px;
+  --font-size-xxxxl: 72px;
+ 
+  --font-family-be_vietnam: "Be Vietnam", Helvetica;
+  --font-family-bebas_neue: "Bebas Neue", Helvetica;
+  --font-family-scala_sans_pro-regular: "Scala Sans Pro-Regular", Helvetica;
+  --font-family-zen_kurenaido: "Zen Kurenaido", Helvetica;
+}
+.zenkurenaido-normal-black-53px {
+  color: var(--black);
+  font-family: var(--font-family-zen_kurenaido);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.bevietnam-normal-black-53px {
+  color: var(--black);
+  font-family: var(--font-family-be_vietnam);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.zenkurenaido-normal-black-72px {
+  color: var(--black);
+  font-family: var(--font-family-zen_kurenaido);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.scalasanspro-regular-normal-cinnabar-48px {
+  color: var(--cinnabar-2);
+  font-family: var(--font-family-scala_sans_pro-regular);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.scalasanspro-regular-normal-tuatara-24px {
+  color: var(--tuatara);
+  font-family: var(--font-family-scala_sans_pro-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.border-1px-black {
+  border: 1px solid var(--black);
+}
+
+.border-4px-thunderbird {
+  border: 4px solid var(--thunderbird);
+}
+
+.border-1-4px-black {
+  border: 1.4px solid var(--black);
+}
