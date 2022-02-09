@@ -14,6 +14,7 @@ gsap.to("#circle", {duration: 4, ease: "circ.out", width:650, x:325, y:-325, opa
         scrollTrigger: {  
             trigger: ".container2",
             start: 'top top-=200',
+            end: 'end',
             scrub: true 
         }
 });
@@ -23,6 +24,7 @@ gsap.to("#object1", {duration: 4, ease: "circ.out", width:250, x:125, y:-125, op
     scrollTrigger: {  
         trigger: ".container2",
         start: 'top top-=200',
+        end: 'end',
         scrub: true 
     }
 });
@@ -33,7 +35,7 @@ gsap.to("#object1", {duration: 4, ease: "circ.out", width:250, x:125, y:-125, op
 gsap.to("#circle", {duration: 5, ease: "power1.out", width: 2000, x:1000, y:-1000,
     scrollTrigger: {  
         trigger: ".container3",
-        start: 'top',
+        start: 'top top-=10px',
         scrub: true 
     }
 });
@@ -42,7 +44,7 @@ gsap.to("#circle", {duration: 5, ease: "power1.out", width: 2000, x:1000, y:-100
 gsap.to("#object1", {duration: 5, ease: "power1.out", width:1950, x: 2700, y:-825,
     scrollTrigger: {  
         trigger: ".container3",
-        start: 'top',
+        start: 'top top-=10px',
         scrub: true 
     }
 });
@@ -51,7 +53,7 @@ gsap.to("#object1", {duration: 5, ease: "power1.out", width:1950, x: 2700, y:-82
 gsap.to("#circle2", {duration: 6, ease: "circ.out", width:650, x: 325, y:-325, opacity: 1, 
     scrollTrigger: {  
         trigger: ".container3",
-        start: 'top',
+        start: 'top top-=10px',
         scrub: true 
     }
 });
