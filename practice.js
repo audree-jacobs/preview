@@ -33,13 +33,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 function menuIn() {
 
-  gsap.to("#circle_menu", {duration: 1.5, ease: 'back', x: -150, y: 150});
+  gsap.to("#circle_menu", {duration: 1.5, ease: 'back', x: -200, y: 200});
   gsap.to("#ham", {duration: 0.5, ease: 'power 1', opacity: 0});
 
 };
 
 function menuOut() {
-  gsap.to("#circle_menu", {duration: 2, ease: 'back', x: 150, y: -150});
+  gsap.to("#circle_menu", {duration: 2, ease: 'back', x: 200, y: -200});
   gsap.to("#ham", {duration: 0.5, ease: 'power 1', opacity: 1});
-}
+};
+
+// hover animations 
 

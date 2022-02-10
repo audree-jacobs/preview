@@ -14,25 +14,63 @@
 </head>
 <body>
 
-    <div class="container2"></div>    
-    <div class="container3"></div>
+
+    <!-- Section Containers (used for coordinating timeline scroll animations, not visible) !-->
+    <div class="container2"></div>   
+    
+    
+    <span id="opening_screen">
+
+        <h1>IN4.0S</h1>
+        <h2>BUILDING THE FUTURE</h2>
+
+    </span>
+
+
+    <!-- all landing page main content !--> 
+    <span id="landing_page_content">
+
+    <!-- Fixed Navigation Items (visible at all times) -->    
+
+    <!-- Expanded Circle Menu !-->
     <nav id="circle_menu" onclick="menuOut()" >
         <ul id="menu_content">
             <li class="active" class="menu_item"> Home </li>
             <li class="menu_item"> About Us </li>
+            <li class="menu_item"> Solutions </li>
             <li class="menu_item"> Careers </li> 
         </ul>
     </nav>
+
+    <!-- Compact Hamburger Menu !-->
     <img src="menu.png" id="ham" onclick="menuIn()"> 
 
+    <div class="dot_menu">
+        <ul>
+            <li> <a class="menu_dot" href="#" id="dot1"> 1 </a> </li> <p class="text"> Smart Factories </p> <br> 
+            <li> <a class="menu_dot" href="#" id="dot2"> 1 </a> </li> <p class="text"> Vision </p> <br> 
+            <li> <a class="menu_dot" href="#" id="dot3"> 1 </a> </li> <p class="text"> Climate Tech </p> <br> 
+            <li> <a class="menu_dot" href="#" id="dot4"> 1 </a> </li> <p class="text"> Sectors </p> <br> 
+            <li> <a class="menu_dot" href="#" id="dot5"> 1 </a> </li> <p class="text"> Contact </p> <br> 
+        </ul>
+        <div class="line"></div>
 
+    </div>
+
+
+    <!-- Moving Objects !-->
+
+    <!-- Section 1 objects !-->
     <div id="circle"> 
     </div>
-    
     <img id="object1" src="in40s logo transparent.png">
 
+    <!-- Section 2 objects !-->
     <div id="circle2"> 
     </div>
+
+    </span>
+
     
 
     
