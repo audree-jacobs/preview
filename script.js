@@ -25,14 +25,3 @@ var tl = gsap.timeline( {
 tl.to(".airplane", {duration: 1, ease: 'power 1', x:half});
 tl.to(".ball_line", {duration: 1, ease: 'power 1', x:half}, "<");
 tl.to(".section1", {duration: 1, ease: 'power 1', y:height});
-
-function slide() {
-
-gsap.to(".airplane", {duration: 1, ease: 'power 1', x:"-638px"});
-gsap.to(".ball_line", {duration: 1, ease: 'power 1', x:"-638px"});
-
-};
-
-function slide2() {
-    
-};
