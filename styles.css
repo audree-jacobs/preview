@@ -333,7 +333,7 @@ ul {
 /* Start of static section */
 
 .static_section {
-    height: 4000px; 
+    height: 1000px; 
     background-color:rgb(255, 255, 255); 
     position: static; 
     top: -100vh;     
