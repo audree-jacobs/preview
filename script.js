@@ -38,10 +38,16 @@ var tl = gsap.timeline( {
 
 
 // entire opening section scrolls up 
-tl.to(".opening_section", {duration: 1, ease: 'power 1', y:height})
+tl.to(".opening_section", {duration: 1, ease: 'linear', y:height})
 
+
+// logo goes from full size into the corner
+tl.to(".logo", {duration: 1, ease: 'power 1', top: -10, left: 0, width: "7vw", padding: 25}, "<")
+//subtitles disappear 
+tl.to(".subtitle", {duration: 0.1, ease: 'power 1', opacity: 0}, "<")
+tl.to(".caption_boxO", {duration: 0.1, ease: 'power 1', opacity: 0}, "<")
 // entire first section scrolls into view 
-tl.to(".section1", {duration: 1, ease: 'power 1', y:height}, "<")
+tl.to(".section1", {duration: 1, ease: 'linear', y:height}, "<")
 
 // first image & caption move from 50% of screen width to full screen, moving left 
 tl.to(".image1", {duration: 0.5, ease: 'power 1', x:half})
@@ -69,4 +75,22 @@ tl.to(".image3", {duration: 0.5, ease: 'power 1', x:half})
 tl.to(".caption_box3", {duration: 0.5, ease: 'power 1', x:half}, "<")
 
 // entire third section scrolls up 
-tl.to(".section3", {duration: 1, ease: 'power 1', y:height2}); 
+tl.to(".section3", {duration: 1, ease: 'power 1', y:height2}) 
+
+// static section scrolls up 
+tl.to(".static_section", {duration: 1, ease: 'power 1', y:height2}, "<");
+
+
+//// animated menu 
+
+function menuIn() {
+
+    gsap.to("#circle_menu", {duration: 1.5, ease: 'back', x: -200, y: 200});
+    gsap.to("#ham", {duration: 0.5, ease: 'power 1', opacity: 0});
+  
+  };
+  
+  function menuOut() {
+    gsap.to("#circle_menu", {duration: 2, ease: 'back', x: 200, y: -200});
+    gsap.to("#ham", {duration: 0.5, ease: 'power 1', opacity: 1});
+  };
