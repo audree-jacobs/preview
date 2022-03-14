@@ -1,0 +1,63 @@
+:root { 
+  --black: #000000;
+  --heat-wave: #ff7a00;
+ 
+  --font-size-l: 26px;
+  --font-size-m: 25px;
+  --font-size-s: 24px;
+  --font-size-xl: 36px;
+  --font-size-xxl: 40px;
+  --font-size-xxxl: 64px;
+  --font-size-xxxxl: 288px;
+ 
+  --font-family-quicksand: "Quicksand", Helvetica;
+  --font-family-thasadith: "Thasadith", Helvetica;
+  --font-family-zen_kurenaido: "Zen Kurenaido", Helvetica;
+}
+.quicksand-normal-black-25px {
+  color: var(--black);
+  font-family: var(--font-family-quicksand);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.quicksand-normal-heat-wave-288px {
+  color: var(--heat-wave);
+  font-family: var(--font-family-quicksand);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.quicksand-bold-black-36px {
+  color: var(--black);
+  font-family: var(--font-family-quicksand);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.zenkurenaido-normal-black-26px {
+  color: var(--black);
+  font-family: var(--font-family-zen_kurenaido);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.zenkurenaido-normal-black-40px {
+  color: var(--black);
+  font-family: var(--font-family-zen_kurenaido);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.zenkurenaido-normal-black-64px {
+  color: var(--black);
+  font-family: var(--font-family-zen_kurenaido);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
