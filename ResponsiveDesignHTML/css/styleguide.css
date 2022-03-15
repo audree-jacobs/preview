@@ -1,0 +1,176 @@
+:root { 
+  --black: #000000;
+  --heat-wave: #ff7a00;
+  --white: #ffffff;
+ 
+  --font-size-l: 26px;
+  --font-size-m: 25px;
+  --font-size-s: 24px;
+  --font-size-xl: 30px;
+  --font-size-xs: 20px;
+  --font-size-xxl: 36px;
+  --font-size-xxs: 15px;
+ 
+  --font-family-quicksand: "Quicksand", Helvetica;
+  --font-family-thasadith: "Thasadith", Helvetica;
+  --font-family-zen_kurenaido: "Zen Kurenaido", Helvetica;
+}
+.quicksand-normal-black-25px {
+  color: var(--black);
+  font-family: var(--font-family-quicksand);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.zenkurenaido-normal-black-26px {
+  color: var(--black);
+  font-family: var(--font-family-zen_kurenaido);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.quicksand-normal-heat-wave-288px {
+  color: var(--heat-wave);
+  font-family: var(--font-family-quicksand);
+  font-size: 288px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.quicksand-bold-black-36px {
+  color: var(--black);
+  font-family: var(--font-family-quicksand);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.zenkurenaido-normal-black-64px {
+  color: var(--black);
+  font-family: var(--font-family-zen_kurenaido);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.quicksand-normal-heat-wave-152-4px {
+  color: var(--heat-wave);
+  font-family: var(--font-family-quicksand);
+  font-size: 152.4px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.quicksand-bold-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-quicksand);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.quicksand-normal-heat-wave-230px {
+  color: var(--heat-wave);
+  font-family: var(--font-family-quicksand);
+  font-size: 230px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.quicksand-bold-black-30px {
+  color: var(--black);
+  font-family: var(--font-family-quicksand);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.zenkurenaido-normal-black-40px {
+  color: var(--black);
+  font-family: var(--font-family-zen_kurenaido);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.zenkurenaido-normal-black-17px {
+  color: var(--black);
+  font-family: var(--font-family-zen_kurenaido);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.quicksand-normal-black-12-3px {
+  color: var(--black);
+  font-family: var(--font-family-quicksand);
+  font-size: 12.3px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.quicksand-normal-black-16-4px {
+  color: var(--black);
+  font-family: var(--font-family-quicksand);
+  font-size: 16.4px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.quicksand-normal-black-24px {
+  color: var(--black);
+  font-family: var(--font-family-quicksand);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.zenkurenaido-normal-black-58px {
+  color: var(--black);
+  font-family: var(--font-family-zen_kurenaido);
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.thasadith-normal-black-144px {
+  color: var(--black);
+  font-family: var(--font-family-thasadith);
+  font-size: 144px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.quicksand-normal-black-15px {
+  color: var(--black);
+  font-family: var(--font-family-quicksand);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.zenkurenaido-normal-black-35px {
+  color: var(--black);
+  font-family: var(--font-family-zen_kurenaido);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.zenkurenaido-normal-black-30px {
+  color: var(--black);
+  font-family: var(--font-family-zen_kurenaido);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.quicksand-normal-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-quicksand);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
+}
