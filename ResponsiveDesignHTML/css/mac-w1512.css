@@ -52,7 +52,7 @@
   align-items: flex-end;
   display: flex;
   flex-direction: column;
-  left: 504px;
+  left: 503px;
   min-height: 179px;
   position: absolute;
   top: 5180px;
@@ -78,7 +78,7 @@
   left: 37px;
   letter-spacing: 0;
   position: absolute;
-  top: 18px;
+  top: 25px;
   width: 281px;
 }
 
@@ -492,7 +492,7 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 1439px;
+  width: 1441px;
 }
 
 .desktop-w1440 .bottom-nav {
@@ -660,10 +660,10 @@
   font-family: var(--font-family-zen_kurenaido);
   font-size: 18px;
   font-weight: 400;
-  left: 10px;
+  left: 11px;
   letter-spacing: 0;
   position: absolute;
-  top: 4px;
+  top: 7.25px;
   width: 125px;
 }
 
@@ -1258,7 +1258,7 @@
   left: 31px;
   letter-spacing: 0;
   position: absolute;
-  top: 17px;
+  top: 24px;
   width: 276px;
 }
 
@@ -1809,7 +1809,7 @@
   left: 24px;
   letter-spacing: 0;
   position: absolute;
-  top: 13px;
+  top: 19px;
   width: 216px;
 }
 
@@ -2998,7 +2998,7 @@
   left: 31px;
   letter-spacing: 0;
   position: absolute;
-  top: 17px;
+  top: 24.5px;
   width: 284px;
 }
 
