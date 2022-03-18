@@ -92,10 +92,6 @@ ul {
     font-size: 1.3em;
 }
 
-.active {
-    color: white; 
-}
-
 #circle_menu {
     display: block; 
     border-radius: 50%;
@@ -126,6 +122,20 @@ ul {
     z-index: 21;
     border-radius: 50%;
     border: 1px solid black; 
+}
+
+#menu_content a {
+    text-decoration: none; 
+    color: black; 
+}
+
+#menu_content a:hover {
+    text-decoration: none; 
+    color: white; 
+}
+
+.active {
+    color: white !important ; 
 }
 
 /* Section 1 */
@@ -445,7 +455,7 @@ ul {
 .number2Left {
     grid-column: 2/5;
     border-right: 2px solid black;
-    width: 99.80%;
+    width: 100%;
     height: auto; 
 }
 
@@ -529,7 +539,7 @@ ul {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 60%; 
+    width: 50.1%; 
 }
 
 .caption_boxThree {
@@ -547,7 +557,7 @@ ul {
 }
 
 .graphic {
-    max-width: 45%; 
+    max-width: 32vw; 
     position: absolute;
     left: 0; 
     top: 35%; 
@@ -561,3 +571,95 @@ ul {
     text-justify: inter-word;  
 }
 
+
+/* Number 4 Section */
+
+.number4Left {
+    grid-column: 2/4; 
+    border-right: 2px solid #000000
+}
+
+.number4Left .numberBox {
+    width: 100%; 
+}
+
+.number4Right {
+    grid-column: 4/8; 
+    padding: 50px;
+    padding-left: 80px;
+    position: relative;  
+}
+
+.number4Right p {
+    max-width: 90%; 
+    padding-top: 30px; 
+}
+
+.graph {
+    max-width: 90%; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.425), 0 6px 20px 0 rgba(0, 0, 0, 0.486);
+}
+
+.number4Right .numberBox {
+    padding-top: 10vh; 
+}
+
+.contactButton {
+    border: 2px solid black; 
+    position: absolute; 
+    bottom: 0; 
+    left: -2px; 
+    padding: 10px;
+    padding-right: 20px; 
+    padding-left: 20px;   
+}
+
+.contactButton h2 {
+    margin: 0px; 
+    font-size: 1.9em; 
+}
+
+/* footer */
+
+footer {
+    height: 100px; 
+    text-align: center; 
+    padding: 0px; 
+    margin: 0px; 
+    position: relative; 
+}
+
+footer ul li {
+    display: inline;
+    padding: 10px; 
+    padding-top: 30px;
+    padding-bottom: 30px; 
+}
+
+footer ul {
+    margin: auto; 
+    width: 40%; 
+    padding-bottom: 30px; 
+    margin-bottom: 20px;
+}
+footer a {
+    text-decoration: none; 
+    color: black;
+}
+
+
+footer a:hover {
+    text-decoration: none; 
+    color: #fe7a00;
+    font-weight: 700; 
+}
+
+.linkedIn {
+    max-width: 40px; 
+}
+
+.linked {
+    position: absolute;  
+    bottom: 2; 
+    left: 25%; 
+}
