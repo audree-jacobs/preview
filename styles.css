@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
 
 body {
     padding: 0px;
@@ -15,8 +16,13 @@ h2 {
     font-size: 2.5em; 
 }
 
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; 
+}
+
 .please {
-    height: 2000vh; 
+    height: 450vh; 
     position: relative; 
 }
 
@@ -30,7 +36,7 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  
     overflow: hidden; 
-    height: 100vh; 
+    height: 100vh;
     max-height: 100vh; 
 }
 
@@ -55,9 +61,25 @@ h2 {
 
 .caption_boxO {
     position: absolute; 
-    right: -5vw; 
-    bottom: 15vh; 
+    right: -6vw; 
+    bottom: 13vh; 
     max-width: 30%;
+}
+
+.caption_boxO p {
+    margin: 0px; 
+    padding-top: 20px;
+    padding-left: 10px;  
+}
+
+.openLink {
+    text-decoration: none;
+    color: black;
+}
+
+.openLink:hover {
+    text-decoration: none;
+    color: rgb(214, 27, 27);
 }
 
 /* Circle menu  */
@@ -109,7 +131,7 @@ ul {
 /* Section 1 */
 
 .section1 {
-    position: sticky; 
+    position: fixed; 
     top: 100vh; 
     width: 100%; 
     display: grid;
@@ -333,8 +355,209 @@ ul {
 /* Start of static section */
 
 .static_section {
-    height: 1000px; 
+    height: auto;  
     background-color:rgb(255, 255, 255); 
-    position: static; 
-    top: -100vh;     
+    position: relative; 
+    top: 90vh;    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: fit-content() fit-content() fit-content() fit-content(); 
+    width: 100%;
 }
+
+/* Number Section 1 */
+
+.number1 {
+    grid-column: 2/8; 
+    background-color: rgb(255, 255, 255); 
+    border-left: 2px solid black; 
+    padding: 25px; 
+    position: relative; 
+    display: block;
+    height: auto;
+    padding-bottom: 60px; 
+}
+
+.awardText {
+    padding-left: 30px;
+    max-width: 90%; 
+    text-align: justify;
+    text-justify: inter-word;
+    display: block;
+}
+
+.awardText a {
+    text-decoration: none; 
+    color: black;
+    text-align: left; 
+}
+
+.awardText a:hover {
+    text-decoration: none; 
+    color: #fe7a00;
+    font-weight: 600; 
+}
+
+.awardText h2 {
+    margin-bottom: 0px; 
+    text-align: left; 
+}
+
+.awardText h3 {
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 1.4em;
+    font-weight: 300; 
+    margin: 0px;
+    padding-bottom: 10px; 
+}
+
+#borderLeft {
+    border-bottom: 2px solid #000000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%; 
+}
+
+.numberBox {
+    width: 20%;
+    margin-bottom: 20vh; 
+    margin-left: 30px; 
+    margin-top: 10vh; 
+}
+
+.numberBox p {
+    font-size: 13em;
+    color: #fe7a00;  
+    padding: 0px; 
+    margin: 0px; 
+    text-align: center; 
+}
+
+.numberBox h3 {
+    text-align: center; 
+    margin-top: 0px; 
+    font-size: 1.5em; 
+}
+
+/* Number Section 2 */
+
+.number2Left {
+    grid-column: 2/5;
+    border-right: 2px solid black;
+    width: 99.80%;
+    height: auto; 
+}
+
+.number2Right {
+    grid-column: 5/8;
+    position: relative; 
+    height: auto;  
+}
+
+#numberBox2 {
+    width: 60%;
+    margin-bottom: 0px; 
+    padding-bottom: 0px; 
+} 
+
+.factory {
+    max-width: 80%; 
+    margin-top: 0px; 
+}
+
+.caption_boxTwo {
+    position: absolute; 
+    left: 0; 
+    bottom: 25%; 
+    max-width: 60%;
+}
+
+.caption_boxTwo p {
+    margin: 0px; 
+    padding-top: 30px;
+    padding-left: 10px;  
+    text-align: right; 
+}
+
+.number2_text {
+    width: 100%; 
+    padding: 50px; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    margin-top: 30px; 
+}
+
+.number2_text p {
+    grid-column: 1/2; 
+}
+
+#bigNumber {
+    grid-column: 2/3;
+    font-size: 5em;  
+    margin: 0px;
+    padding: 0px; 
+    text-align: center; 
+}
+
+/* Number section 3 */
+
+.number3Left {
+    grid-column: 1/7; 
+    border-right: 2px solid black; 
+    position: relative; 
+    padding-bottom: 450px; 
+}
+
+.number3Left .numberBox {
+    float: right; 
+    width: 40%; 
+    padding: 50px;
+    padding-top: 0px; 
+}
+
+#borderTop {
+    border-top: 2px solid #000000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33.3%; 
+}
+
+#borderB {
+    border-bottom: 2px solid #000000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%; 
+}
+
+.caption_boxThree {
+    position: absolute; 
+    left: 40%; 
+    top: 50%; 
+    max-width: 40%;  
+}
+
+.caption_boxThree p {
+    margin: 0px; 
+    padding-top: 50px;
+    padding-left: 10px;  
+    text-align: right; 
+}
+
+.graphic {
+    max-width: 45%; 
+    position: absolute;
+    left: 0; 
+    top: 35%; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.425), 0 6px 20px 0 rgba(0, 0, 0, 0.486);
+}
+
+.number3Right {
+    padding: 30px; 
+    padding-top: 55vh; 
+    text-align: justify;
+    text-justify: inter-word;  
+}
+
