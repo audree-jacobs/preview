@@ -63,27 +63,36 @@ tl.to(".section1", {duration: 1, ease: 'linear', y:height}, "<")
 // first image & caption move from 50% of screen width to full screen, moving left 
 tl.to(".image1", {duration: 1, ease: 'power 1', x:half, delay: 0.5})
 tl.to(".caption_box", {duration: 1, ease: 'power 1', x:half}, "<")
+tl.to(".text1", {duration: 1, ease: 'power 1', opacity: 1}, "<")
 
 // entire first section scrolls up 
 tl.to(".section1", {duration: 2, ease: 'none', y:height2})
 
 // entire second section scrolls into view 
 tl.to(".section2", {duration: 2, ease: 'none', y:height}, "<")
+tl.to("#ham1", {duration: 0.5, ease: 'none', opacity: 1})
+tl.to("#ham", {duration: 0.5, ease: 'none', opacity: 0}, "<")
 
 // second image & caption (& clip path) move from 50% of screen width to full screen, moving right 
 tl.to(".image2", {duration: 1, ease: 'power 1', x:half_pos,delay: 0.5 })
 tl.to(".caption_box2", {duration: 1, ease: 'power 1', x:left_caption}, "<")
 tl.to(".clip_box", {duration: 1, ease: 'power 1', clipPath: 'inset(0% 0% 0% 0%)'}, "<")
+tl.to(".text2", {duration: 1, ease: 'power 1', opacity: 1}, "<")
 
 // entire second section scrolls up 
-tl.to(".section2", {duration: 2, ease: 'power 1', y:height2})
+tl.to(".section2", {duration: 2, ease: 'linear', y:height2})
+tl.to("#ham2", {duration: 2, ease: 'linear', y:-height}, "<")
+tl.to("#ham1", {duration: 2, ease: 'linear', y:-height}, "<") /// maybe take this out 
+tl.to("#ham1", {duration: 0.5, ease: 'none', opacity: 0}, "<")
+tl.to("#ham", {duration: 0.5, ease: 'none', opacity: 1, delay: 1}, "<")
 
 //entire third section scrolls into view 
-tl.to(".section3", {duration: 2, ease: 'power 1', y:height}, "<");
+tl.to(".section3", {duration: 2, ease: 'linear', y:height}, ">-1.5");
 
 // third image & caption move from 50% of screen width to full screen, moving left 
 tl.to(".image3", {duration: 1, ease: 'power 1', x:half, delay: 0.5})
 tl.to(".caption_box3", {duration: 1, ease: 'power 1', x:half}, "<")
+tl.to(".text3", {duration: 1, ease: 'power 1', opacity: 1}, "<")
 
 // entire third section scrolls up 
 tl.to(".section3", {duration: 2, ease: 'none', y:height2}) 
@@ -92,12 +101,12 @@ tl.to(".section3", {duration: 2, ease: 'none', y:height2})
 tl.to(".static_section", {duration: 2, ease: 'none', y:height}, "<");
 
 
+
 //// animated menu 
 
 function menuIn() {
     gsap.to("#circle_menu", {duration: 1.5, ease: 'back', x: -200, y: 200});
     gsap.to("#ham", {duration: 0.5, ease: 'power 1', opacity: 0});
-  
   };
   
   
