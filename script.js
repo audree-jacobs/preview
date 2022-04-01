@@ -22,7 +22,7 @@ var height2 = height * 2;
 // reload browser on window resize (in order to recalculate screen width 
 // and height for accurate positioning) 
 
-window.onresize = function(){ location.reload(); }
+//window.onresize = function(){ location.reload(); }
 
 
 //gsap animating:
