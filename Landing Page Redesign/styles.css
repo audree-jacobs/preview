@@ -1,0 +1,204 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* CSS reset */
+
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+a {
+    text-decoration: none; 
+}
+
+
+/* Circle menu */
+ul {
+    list-style: none; 
+    text-align: left; 
+    padding-left: 0px;
+    padding-top: 0px; 
+    font-size: 1.7vw;
+}
+
+#circle_menu {
+    display: block; 
+    border-radius: 50%;
+    padding: 6vw; 
+    background: rgb(212,66,0);
+    background: linear-gradient(90deg, rgba(212,66,0,1) 20%, rgba(255,185,45,1) 99%);
+
+    max-width: 20vw;  
+    width: 9vw; 
+    height: 9vw; 
+    aspect-ratio: 1/1;
+
+    position: fixed; 
+    top: -18vw;
+    right: -18vw; 
+    z-index: 22;
+    font-family: sans-serif;
+}
+
+#circle_menu:hover {
+    cursor: pointer;
+}
+
+#circle_menu li:hover {
+    color:rgb(255, 255, 255); 
+}
+
+#menu_content a {
+    text-decoration: none; 
+    color: black; 
+}
+
+#menu_content a:hover {
+    text-decoration: none; 
+    color: white; 
+}
+
+.active {
+    color: white !important ; 
+}
+
+.active:hover {
+    color: rgb(255, 175, 172) !important; 
+}
+
+#menuIcon {
+    display: block; 
+    padding: 0.8vw; 
+    margin: 30px; 
+    width: 2vw; 
+    position: fixed; 
+    top: 3vh;
+    right: 3vh; 
+    z-index: 21;
+    border-radius: 50%;
+    border: 1.34px solid black; 
+}
+
+#menuIcon:hover {
+    cursor: pointer; 
+}
+
+/* Opening Section */
+
+.section1{
+    position: relative;
+    height: 100vh; 
+    max-height: 100vh; 
+    overflow: hidden; 
+}
+
+#logo {
+    position: absolute;
+    max-width: 536px; 
+    height: 40vh; 
+    left: 14vw;
+    top: 15vh;
+    background: url(in40slogotransparent.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#subtitle {
+    position: absolute;
+    height: 5vh; 
+    left: 14.5vw;
+    top: 50vh;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 60px;
+
+    color: #000000;
+}
+
+/* links on opening page */
+
+/* link 1 */
+
+.group1 {
+    position: absolute;
+    bottom: 30vh; 
+    right: 0; 
+
+}
+
+.text1 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    text-decoration: none; 
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 30px;
+    padding-left: 1vw; 
+    color: #000000;
+}
+
+.text1:hover {
+    color: rgb(192, 0, 0); 
+    font-weight: 600; 
+}
+
+.circle {
+    border-radius: 50%; 
+    width: 1vw; 
+    aspect-ratio: 1/1; 
+    border: 1.8px solid #000000;
+    box-sizing: border-box;
+}
+
+.line {
+    height: 0px; 
+    border-top: 1.8px solid #000000;
+    width: 20vw; 
+    margin-top: -0.6vw; 
+    margin-left: 0.9vw; 
+}
+
+/* link 2 */
+
+.group2 {
+    position: absolute;
+    bottom: 21vh; 
+    right: 0; 
+
+}
+
+/* link 3 */
+
+.group3 {
+    position: absolute;
+    bottom: 12vh; 
+    right: 0; 
+   
+}
+
+/* section 2 */
+.section2 {
+    position: relative;  
+    max-width: 100%;
+    height: 100vh; 
+    overflow: hidden;    
+}
+
+#line2 {
+
+}
+
+.movingText1 {
+
+}
+
+#firstImage { 
+    height: 100vh; 
+    position: absolute; 
+    left: 50vw;  
+}
