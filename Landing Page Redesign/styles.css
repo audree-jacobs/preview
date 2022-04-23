@@ -8,6 +8,8 @@
 body {
     margin: 0; 
     padding: 0;
+    width: 100%;  
+    overflow-x: hidden;
 }
 
 a {
@@ -71,15 +73,16 @@ ul {
 
 #menuIcon {
     display: block; 
-    padding: 0.8vw; 
+    padding: 0.6vw; 
     margin: 30px; 
-    width: 2vw; 
+    width: 1.8vw; 
     position: fixed; 
     top: 3vh;
     right: 3vh; 
     z-index: 21;
     border-radius: 50%;
-    border: 1.34px solid black; 
+    border: 1.34px solid black;
+    background-color: white;  
 }
 
 #menuIcon:hover {
@@ -182,23 +185,92 @@ ul {
 }
 
 /* section 2 */
+
+
 .section2 {
-    position: relative;  
     max-width: 100%;
-    height: 100vh; 
-    overflow: hidden;    
+    height: 300vh; 
+    position: relative; 
+    /* overflow: hidden; */     
+}
+
+.subsection2 {
+    position: sticky; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100vh;  
+}
+
+.left_text {
+    display: inline-block; 
+    max-width: 49vw;
+    width: 49vw; 
+    text-align: left; 
+    height: 75vh;
+    margin-top: 12.5vh; 
+    text-align: center; 
+    /* position: sticky;
+    top: 12.5vh; 
+    left: 0;  */
+}
+
+#logo2 {
+    width: 30%;  
+    margin-bottom: 5vh;
 }
 
 #line2 {
-
+    border-bottom: 2px solid black; 
+    width: 80%; 
 }
 
 .movingText1 {
+    width: 79%; 
+    padding-top: 5vh;
+    padding-left: 11vw; 
+    box-sizing: border-box;
+    font-size: 1.8vw; 
+    text-align: left; 
+    font-family: 'Quicksand'; 
+}
 
+.movingText2 {
+    width: 40vw; 
+    padding-top: 5vh;
+    padding-left: 11vw; 
+    box-sizing: border-box;
+    font-size: 1.8vw; 
+    text-align: left; 
+    font-family: 'Quicksand'; 
+
+    position: absolute; 
+    top: 40vh; 
+    left: 50vw; 
+
+}
+
+.movingText3 {
+    width: 40vw; 
+    padding-top: 5vh;
+    padding-left: 11vw; 
+    box-sizing: border-box;
+    font-size: 1.8vw; 
+    text-align: left; 
+    font-family: 'Quicksand'; 
+
+    position: absolute; 
+    top: 40vh; 
+    left: 50vw; 
 }
 
 #firstImage { 
-    height: 100vh; 
-    position: absolute; 
-    left: 50vw;  
+    display: inline; 
+    width: 100vw; 
+    margin-top: 0px;   
+    position: absolute;   
+    top: 0; 
+    left: 50vw;
+    z-index: 10; 
 }
+
