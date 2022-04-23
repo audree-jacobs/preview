@@ -303,7 +303,6 @@ ul {
     position: relative; 
     background-color: rgb(255, 255, 255); 
     z-index: 30; 
-    height: auto; 
     width: 100vw;
     max-width: 100vw;
     padding-left: 13vw; 
@@ -312,7 +311,7 @@ ul {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: fit-content(1fr 1fr 1fr 1fr 1fr 1fr); 
+    grid-template-rows: fit-content(1fr 1fr 1fr 1fr); 
 }
 
 /* sticky logo */
@@ -551,3 +550,39 @@ ul {
     padding-right: 1vw; 
 }
 
+/* number 4 section */
+
+.section4 {
+    grid-column: 1/4; 
+    grid-row: 4/5; 
+    padding: 5vw; 
+    padding-left: 15vw; 
+    padding-bottom: 10vw; 
+    border-left: 2px solid black; 
+}
+
+.border2 {
+    border-top: 2px solid black;
+    width: 46%;
+    margin-left: -15vw; 
+    margin-top: -5vw;  
+}
+
+#subheading4 {
+    width: 40vw;
+}
+
+#image4 {
+    width: 40vw; 
+}
+
+
+/* section 5 */
+
+.section5 {
+    border-top: 2px solid black;
+    width: 100%; 
+    grid-column: 1/4; 
+    padding-left: 12.5vw; 
+    padding-right: 12.5vw; 
+}
