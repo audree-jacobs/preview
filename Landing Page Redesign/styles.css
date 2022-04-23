@@ -16,6 +16,18 @@ a {
     text-decoration: none; 
 }
 
+/*  */
+
+h2 {
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: 200; 
+    font-size: 2.5em; 
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700; 
+}
 
 /* Circle menu */
 ul {
@@ -79,7 +91,7 @@ ul {
     position: fixed; 
     top: 3vh;
     right: 3vh; 
-    z-index: 21;
+    z-index: 31;
     border-radius: 50%;
     border: 1.34px solid black;
     background-color: white;  
@@ -194,12 +206,23 @@ ul {
     /* overflow: hidden; */     
 }
 
+.leftBorder {
+    margin-left: 13vw; 
+    border-left: 2px solid black;
+    width: 5vw; 
+    height: 200vh;  
+    position: absolute; 
+    left: 0; 
+    bottom: -20vh; 
+}
+
 .subsection2 {
     position: sticky; 
     top: 0;
     left: 0;
     width: 100%; 
     height: 100vh;  
+    background-color: white; 
 }
 
 .left_text {
@@ -274,3 +297,103 @@ ul {
     z-index: 10; 
 }
 
+/* Orange number section */
+
+.orangeNumberSection { 
+    position: relative; 
+    background-color: rgb(255, 255, 255); 
+    z-index: 30; 
+    height: 300vh; 
+    width: 100vw;
+    max-width: 100vw;
+    padding-left: 13vw; 
+    padding-right: 13vw; 
+    margin-top: 0vh; 
+    box-sizing: border-box;
+}
+
+/* sticky logo */
+
+#stickyLogo {
+    position: fixed;
+    left: 3vh; 
+    top: 5vh; 
+    width: 7vw;
+    opacity: 0; 
+    z-index: 31;
+}
+
+
+
+/* number 1 section */ 
+
+.number1 {
+    background-color: rgb(255, 255, 255); 
+    border-left: 2px solid black; 
+    padding: 25px; 
+    position: relative; 
+    display: block;
+    height: auto;
+    padding-bottom: 60px; 
+}
+
+.awardText {
+    padding-left: 30px;
+    max-width: 90%; 
+    text-align: justify;
+    text-justify: inter-word;
+    display: block;
+}
+
+.awardText h2 {
+    margin-bottom: 0px; 
+    text-align: left; 
+    font-size: 3vw;
+}
+
+.awardText h3 {
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 2vw;
+    font-weight: 300; 
+    margin: 0px;
+    padding-bottom: 10px; 
+}
+
+.awardText p {
+    font-size: 1.7vw;
+    font-family: 'Quicksand';
+}
+
+.awardText a {
+    text-decoration: none; 
+    color: black;
+    text-align: left; 
+}
+
+.awardText a:hover {
+    text-decoration: none; 
+    color: #fe7a00;
+    font-weight: 600; 
+}
+
+.numberBox {
+    width: 20%;
+    margin-bottom: 15vh; 
+    margin-left: 30px; 
+    margin-top: 10vh; 
+}
+
+.numberBox p {
+    font-size: 12vw;
+    color: #fe7a00;  
+    padding: 0px; 
+    margin: 0px; 
+    text-align: left; 
+    font-family: 'Quicksand';
+}
+
+.numberBox h3 {
+    text-align: left; 
+    margin-top: 0px; 
+    font-size: 3vw; 
+}

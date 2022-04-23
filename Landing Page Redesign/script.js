@@ -41,4 +41,6 @@ tl.to(".movingText2", {duration: 0.5, ease: 'linear', x: -full}, 1);
 tl.to(".movingText3", {duration: 0.5, ease: 'linear', x: -half}, "<");
 tl.to(".movingText3", {duration: 0.5, ease: 'linear', x: -half});
 tl.to("#firstImage", {duration: 0.5, ease: 'linear', x: -half});
-tl.to(".subsection2", {duration: 0.5, ease: 'linear', y: -fullh});
+tl.to(".subsection2", {duration: 1, ease: 'linear', y: -fullh});
+tl.to(".orangeNumberSection", {duration: 1, ease: 'linear', y: -fullh}, "<");
+tl.to("#stickyLogo", {duration: 0.5, ease: 'linear', opacity: 1}, "<");
