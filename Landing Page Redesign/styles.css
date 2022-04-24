@@ -311,7 +311,9 @@ ul {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: fit-content(1fr 1fr 1fr 1fr); 
+    /* grid-template-rows: fit-content(1fr 1fr 1fr 1fr) !important; */
+    grid-template-rows: auto; 
+    margin-bottom: 0; 
 }
 
 /* sticky logo */
@@ -581,8 +583,63 @@ ul {
 
 .section5 {
     border-top: 2px solid black;
-    width: 100%; 
-    grid-column: 1/4; 
+    width: 100%;
+    box-sizing: border-box; 
     padding-left: 12.5vw; 
     padding-right: 12.5vw; 
+
+}
+
+/* advisor grid */
+
+.advisors {
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw;
+    grid-template-rows: 15vw 15vw; 
+    grid-gap: 2vw; 
+    width: 50vw;
+    position: absolute; 
+    left: 35vw;
+    top: 15vh;   
+}
+
+.box {
+    width: 15vw; 
+    max-width: 15vw;
+    width: 100%; 
+    position: relative; 
+}
+
+.box img {
+    max-width: 100%; 
+    width: 100%;
+}
+
+#box1 img {
+    position: relative; 
+}
+
+#box1 p {
+    position: absolute;
+    bottom: 0; 
+}
+
+#box2 p {
+    position: absolute;
+    bottom: 0; 
+}
+
+#box3 p {
+    position: absolute;
+    bottom: 0; 
+}
+
+#box4 p {
+    position: absolute;
+    bottom: 0; 
+}
+
+#box5 p {
+    position: absolute;
+    bottom: 0; 
 }
