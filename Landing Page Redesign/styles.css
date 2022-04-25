@@ -5,11 +5,18 @@
 
 /* CSS reset */
 
+html {
+    max-width: 100vw; 
+}
+
 body {
     margin: 0; 
     padding: 0;
     width: 100%;  
+    max-width: 100%; 
     overflow-x: hidden;
+    position: relative;  
+    height: calc(100% - 140vh); 
 }
 
 a {
@@ -307,7 +314,7 @@ ul {
     max-width: 100vw;
     padding-left: 13vw; 
     padding-right: 13vw; 
-    margin-top: 0vh; 
+    margin-top: -70vh; 
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -583,7 +590,9 @@ ul {
 
 .section5 {
     border-top: 2px solid black;
+    border-bottom: 2px solid black;
     width: 100%;
+    min-height: 50vw; 
     box-sizing: border-box; 
     padding-left: 12.5vw; 
     padding-right: 12.5vw; 
@@ -608,6 +617,12 @@ ul {
     max-width: 15vw;
     width: 100%; 
     position: relative; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274), 0 6px 20px 0 rgba(0, 0, 0, 0.269);
+}
+
+.box:hover {
+    cursor: pointer; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.68), 0 6px 20px 0 rgba(0, 0, 0, 0.662);
 }
 
 .box img {
@@ -615,31 +630,166 @@ ul {
     width: 100%;
 }
 
-#box1 img {
+.names {
+    background: rgb(212,27,0);
+    background: linear-gradient(90deg, rgba(212, 28, 0, 0.852) 0%, rgba(255, 185, 45, 0.84) 100%);
+    padding: 0.6vw; 
+    width: 85%; 
+    border-radius: 0 2vw 0 0; 
+    color: white; 
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 1.2vw; 
+}
+
+.names p {
+    padding: 0; 
+    margin: 0; 
+}
+
+#box1 .names {
+    position: absolute;
+    bottom: 0; 
+}
+
+#box2 .names {
+    position: absolute;
+    bottom: 0; 
+}
+
+#box3 .names {
+    position: absolute;
+    bottom: 0; 
+}
+
+#box4 .names {
+    position: absolute;
+    bottom: 0; 
+}
+
+#box5 .names {
+    position: absolute;
+    bottom: 0; 
+}
+
+/* advisor popup boxes */
+
+.overlay {
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100vw;
+    height: 100vh; 
+    background-color: rgba(255, 255, 255, 0.888);
+    z-index: 100;  
+    display: none;  
+}
+
+.overlayContent {
+    width: 80vw;
+    margin: auto; 
+    background-color: rgb(255, 255, 255); 
+    min-height: 70vh;
+    margin-top: 15vh; 
+    position: relative; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274), 0 6px 20px 0 rgba(0, 0, 0, 0.269);
+    box-sizing: border-box; 
+    border-radius: 1vw 1vw 1vw 1vw; 
+}
+
+.overlay .box { 
+    width: 50vh;
+    max-width: 50vh; 
+    height: 50vh; 
+    position: absolute;
+    top: 10vh; 
+    left: 10vh; 
+}
+
+.overlay .box:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274), 0 6px 20px 0 rgba(0, 0, 0, 0.269);
+    cursor: auto; 
+}
+
+.overlay .box .names {
+    font-size: 1.9vw;
+    padding: 1vw;  
+}
+
+.text {
+    position: relative;
+    margin-left: 70vh; 
+    padding: 3vw; 
+    padding-bottom: 1vw; 
+    padding-top: 10vh; 
+    padding-left: 0;  
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 1vw; 
+}
+
+.exit {
+    position: absolute; 
+    top: 2vw;
+    right: 2vw; 
+    font-size: 2vw; 
+    padding: 0; 
+    margin: 0;  
+}
+
+.exit:hover {
+    cursor: pointer; 
+}
+
+/* section 6 */
+
+.section6 { 
+    height: 75vh;
     position: relative; 
 }
 
-#box1 p {
-    position: absolute;
-    bottom: 0; 
+.contactButton {
+    border: 2px solid black; 
+    position: relative; 
+    margin:auto; 
+    padding: 1vw;
+    padding-right: 3vw; 
+    padding-left: 3vw;  
+    width: 25vw;  
 }
 
-#box2 p {
-    position: absolute;
-    bottom: 0; 
+.contactButton h2 {
+    margin: 0px; 
+    font-size: 2.5vw; 
+    color: black; 
 }
 
-#box3 p {
-    position: absolute;
-    bottom: 0; 
+.contactButton h2:hover {
+    color: #fe7a00;
+    font-weight: 700;   
 }
 
-#box4 p {
-    position: absolute;
-    bottom: 0; 
+.contactLogo {
+    width: 5vw; 
+    margin-left: 55vw; 
 }
 
-#box5 p {
+.contact {
+    margin-top: 25vh; 
+}
+
+.footer {
     position: absolute;
+    width: 100vw; 
     bottom: 0; 
+    left: 0; 
+    height: 10vh; 
+    background-color: rgb(255, 255, 255); 
+    font-family: 'Quicksand', sans-serif; 
+    text-align: center; 
+    font-size: 1.6vw; 
+    vertical-align: center; 
+}
+
+.linkedin {
+    width: 5vw;
+    display: inline; 
 }
