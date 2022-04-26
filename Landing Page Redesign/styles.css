@@ -23,7 +23,7 @@ a {
     text-decoration: none; 
 }
 
-/*  */
+/* Basic Styles */
 
 h2 {
     font-family: 'Zen Kurenaido', sans-serif;
@@ -90,6 +90,8 @@ ul {
     color: rgb(255, 175, 172) !important; 
 }
 
+/* Hamburger Menu Icon */
+
 #menuIcon {
     display: block; 
     padding: 0.6vw; 
@@ -101,7 +103,7 @@ ul {
     z-index: 31;
     border-radius: 50%;
     border: 1.34px solid black;
-    background-color: white;  
+    background-color: rgba(255, 255, 255, 0.546);  
 }
 
 #menuIcon:hover {
@@ -142,7 +144,7 @@ ul {
     color: #000000;
 }
 
-/* links on opening page */
+/* links on opening screen */
 
 /* link 1 */
 
@@ -781,15 +783,46 @@ ul {
     width: 100vw; 
     bottom: 0; 
     left: 0; 
-    height: 10vh; 
+    height: 15vh; 
     background-color: rgb(255, 255, 255); 
     font-family: 'Quicksand', sans-serif; 
     text-align: center; 
     font-size: 1.6vw; 
-    vertical-align: center; 
+    vertical-align: center;  
+}
+
+
+.locations {
+    display: inline;
+    vertical-align: middle;   
+}
+
+.linked {
+    display: inline; 
+    vertical-align: middle; 
+    padding-left: 3vw; 
+    padding-right: 1vw; 
 }
 
 .linkedin {
-    width: 5vw;
+    width: 4vw;
     display: inline; 
+}
+
+.linkedin:hover {
+    filter:drop-shadow(0px 0px 5px rgba(23, 97, 188, 0.374)); 
+}
+
+.footNav {
+    display: inline; 
+}
+
+.footNav a {
+    color: black;
+    font-weight: 500;
+}
+
+.footNav a:hover {
+    color: #fe7a00;
+    font-weight: 700;  
 }

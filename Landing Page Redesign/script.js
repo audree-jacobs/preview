@@ -13,18 +13,20 @@ var fullh = vh * 140;
 
 
 /// circle menu animation 
+// menu opens
 function menuIn() {
     gsap.to("#circle_menu", {duration: 1.5, ease: 'back', x: -tenvw, y: tenvw});
     gsap.to("#menuIcon", {duration: 0.5, ease: 'power 1', opacity: 0});
   };
-  
+
+  // menu closes
 function menuOut() {
     gsap.to("#circle_menu", {duration: 2, ease: 'back', x: tenvw, y: -tenvw});
     gsap.to("#menuIcon", {duration: 0.5, ease: 'power 1', opacity: 1});
 };
 
 
-// scroll trigger for text and image movement 
+// scroll trigger for text and image movement in the first section 
 
 var tl = gsap.timeline( {
   scrollTrigger: {  
@@ -42,49 +44,48 @@ tl.to(".movingText3", {duration: 0.5, ease: 'linear', x: -half}, "<");
 tl.to(".movingText3", {duration: 0.5, ease: 'linear', x: -half});
 tl.to("#firstImage", {duration: 1, ease: 'linear', x: -half});
 tl.to(".subsection2", {duration: 2, ease: 'linear', y: -fullh});
-
-//tl.to(".orangeNumberSection", {duration: 2, ease: 'linear', y: -fullh}, "<");
 tl.to("#stickyLogo", {duration: 0.5, ease: 'linear', opacity: 1}, "<");
-//tl.to(".section5", {duration: 2, ease: 'linear', y: -fullh}, "<");
-//tl.to(".section6", {duration: 2, ease: 'linear', y: -fullh}, "<");
 
 
+
+// advisor popups: functions to open and close 
+
+//TJ
 function popUp1() {
     document.querySelector('#TJ').style.display = "block"; 
 }
-
 function popDown1() {
     document.querySelector('#TJ').style.display = "none"; 
 }
 
+//Rick
 function popUp2() {
   document.querySelector('#rick').style.display = "block"; 
 }
-
 function popDown2() {
   document.querySelector('#rick').style.display = "none"; 
 }
 
+//Jorhena 
 function popUp3() {
   document.querySelector('#jor').style.display = "block"; 
 }
-
 function popDown3() {
   document.querySelector('#jor').style.display = "none"; 
 }
 
+//Matt
 function popUp4() {
   document.querySelector('#matt').style.display = "block"; 
 }
-
 function popDown4() {
   document.querySelector('#matt').style.display = "none"; 
 }
 
+//Vita 
 function popUp5() {
   document.querySelector('#vita').style.display = "block"; 
 }
-
 function popDown5() {
   document.querySelector('#vita').style.display = "none"; 
 }
