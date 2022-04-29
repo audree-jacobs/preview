@@ -10,20 +10,38 @@ var tenvw = vw * 14;
 var half = vw * 50; 
 var full = vw * 100; 
 var fullh = vh * 140; 
+var circleH; 
+var circleW; 
+// circle menu for phone screen 
 
+var x = window.matchMedia("(max-width: 580px)")
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    circleH = vw * 60; 
+    circleW = vw * 45; 
+  } else {
+    circleH = vw * 14;
+    circleW = vw * 14; 
+  }
+}
+
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
 
 /// circle menu animation 
 // menu opens
 function menuIn() {
-    gsap.to("#circle_menu", {duration: 1.5, ease: 'back', x: -tenvw, y: tenvw});
-    gsap.to("#menuIcon", {duration: 0.5, ease: 'power 1', opacity: 0});
-  };
-
-  // menu closes
-function menuOut() {
-    gsap.to("#circle_menu", {duration: 2, ease: 'back', x: tenvw, y: -tenvw});
-    gsap.to("#menuIcon", {duration: 0.5, ease: 'power 1', opacity: 1});
+  gsap.to("#circle_menu", {duration: 1.5, ease: 'back', x: -circleW, y: circleH});
+  gsap.to("#menuIcon", {duration: 0.5, ease: 'power 1', opacity: 0});
 };
+
+// menu closes
+function menuOut() {
+  gsap.to("#circle_menu", {duration: 2, ease: 'back', x: circleW, y: -circleH});
+  gsap.to("#menuIcon", {duration: 0.5, ease: 'power 1', opacity: 1});
+};
+
 
 // scroll trigger for text and image movement in the first section 
 

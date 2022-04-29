@@ -872,8 +872,23 @@ ul {
 
     /* Circle Menu */
     ul {
-        font-size: 1.5em;
-        line-height: 2em; 
+        font-size: 1.4em;
+        line-height: 1.5em; 
+        padding-left: 10vw; 
+    }
+
+    #circle_menu {
+        display: block; 
+        border-radius: 50%;
+        padding: 10vw; 
+    
+        max-width: 60vw;  
+        width: 60vw; 
+        height: 60vw; 
+    
+        position: fixed; 
+        top: -68vw;
+        right: -68vw; 
     }
 
     /* Hamburger Menu Icon */
