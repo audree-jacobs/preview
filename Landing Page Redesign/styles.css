@@ -852,6 +852,10 @@ ul {
     font-weight: 700;  
 }
 
+#link1mobile {
+    display: none; 
+}
+
 
 
 
@@ -923,6 +927,59 @@ ul {
         font-size: 1.7em;
         line-height: 10vw;
         text-align: center; 
+    }
+
+    /* Line Links */
+
+    
+    .text1 {
+        font-size: 2.5vh;
+        line-height: 15px;
+        padding-left: 4vw; 
+        color: #000000;
+    }
+
+    #link1mobile {
+        display: inline; 
+    }
+
+    #link1desktop {
+        display: none; 
+    }
+
+    .circle {
+        width: 4vw; 
+    }
+
+    .line {
+        width: 50vw; 
+        margin-top: -2vw; 
+        margin-left: 4vw; 
+    }
+
+    /* link 1 */
+    .group1 {
+        bottom: 34vh;
+    }
+    /* link 2 */
+    .group2 {
+        bottom: 28vh;
+    }
+    /* link 3 */
+    .group3 {
+        bottom: 22vh;
+    }
+    /* link 4 */
+    .group4 {
+        bottom: 16vh;
+    }
+    /* link 5 */
+    .group5 {
+        bottom: 10vh;
+    }
+    /* link 6 */
+    .group6 {
+        bottom: 4vh; 
     }
 
     /* Moving text Screens */
