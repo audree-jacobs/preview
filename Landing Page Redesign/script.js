@@ -25,7 +25,6 @@ function menuOut() {
     gsap.to("#menuIcon", {duration: 0.5, ease: 'power 1', opacity: 1});
 };
 
-
 // scroll trigger for text and image movement in the first section 
 
 var tl = gsap.timeline( {
