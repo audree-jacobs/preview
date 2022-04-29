@@ -14,9 +14,16 @@ body {
     padding: 0;
     width: 100%;  
     max-width: 100%; 
-    overflow-x: hidden;
-    position: relative;  
-    height: calc(100% - 140vh); 
+    /* overflow-x: hidden;
+    position: relative; */
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  max-height: 100%; 
 }
 
 a {
@@ -116,7 +123,6 @@ ul {
     position: relative;
     height: 100vh; 
     max-height: 100vh; 
-    overflow: hidden; 
 }
 
 #logo {
