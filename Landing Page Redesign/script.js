@@ -8,10 +8,13 @@ var vw = (window.innerWidth)/100;
 // size of circle menu 
 var tenvw = vw * 14; 
 var half = vw * 50; 
+var imageMove = vw * 50; 
 var full = vw * 100; 
+var full2 = vw * 100; 
 var fullh = vh * 140; 
 var circleH; 
 var circleW; 
+var imageMoveUp = 0; 
 // circle menu for phone screen 
 
 var x = window.matchMedia("(max-width: 580px)")
@@ -20,6 +23,12 @@ function myFunction(x) {
   if (x.matches) { // If media query matches
     circleH = vw * 60; 
     circleW = vw * 45; 
+    imageMove = 0; 
+    imageMoveUp = vh * 300; 
+    half = vw * 100; 
+    full2 = vw * 200; 
+    fullh = vw * 200; 
+
   } else {
     circleH = vw * 14;
     circleW = vw * 14; 
@@ -56,10 +65,11 @@ var tl = gsap.timeline( {
 
 tl.to(".movingText1", {duration: 0.5, ease: 'linear', x: -full}); 
 tl.to(".movingText2", {duration: 0.5, ease: 'linear', x: -half}, "<");
-tl.to(".movingText2", {duration: 0.5, ease: 'linear', x: -full}, 1);
+tl.to(".movingText2", {duration: 0.5, ease: 'linear', x: -full2}, 1);
 tl.to(".movingText3", {duration: 0.5, ease: 'linear', x: -half}, "<");
 tl.to(".movingText3", {duration: 0.5, ease: 'linear', x: -half});
-tl.to("#firstImage", {duration: 1, ease: 'linear', x: -half});
+tl.to("#firstImage", {duration: 1, ease: 'linear', x: -imageMove});
+tl.to("#firstImage", {duration: 1, ease: 'linear', y: -imageMoveUp}, "<");
 tl.to(".subsection2", {duration: 2, ease: 'linear', y: -fullh});
 tl.to("#stickyLogo", {duration: 0.5, ease: 'linear', opacity: 1}, "<");
 
